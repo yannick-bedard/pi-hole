@@ -1,6 +1,4 @@
-#!/bin/bash
 
-# Update Pi-Hole's block lists
 echo "http://hosts-file.net/ad_servers.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "http://someonewhocares.org/hosts/hosts" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "http://sysctl.org/cameleon/hosts" | sudo tee -a /etc/pihole/adlists.list > /dev/null
