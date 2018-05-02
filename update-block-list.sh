@@ -12,8 +12,8 @@ echo "http://www.networksec.org/grabbho/block.txt" | sudo tee -a /etc/pihole/adl
 echo "https://adaway.org/hosts.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "https://gist.githubusercontent.com/anudeepND/adac7982307fec6ee23605e281a57f1a/raw/5b8582b906a9497624c3f3187a49ebc23a9cf2fb/Test.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
-echo "https://raw.githubusercontent.com/StevenBlack/hosts/blob/master/extensions/fakenews/hosts" | sudo tee -a /etc/pihole/adlists.list > /dev/null
-echo "https://raw.githubusercontent.com/StevenBlack/hosts/blob/master/extensions/gambling/hosts" | sudo tee -a /etc/pihole/adlists.list > /dev/null
+echo "https://raw.githubusercontent.com/StevenBlack/hosts/master/extensions/fakenews/hosts" | sudo tee -a /etc/pihole/adlists.list > /dev/null
+echo "https://raw.githubusercontent.com/StevenBlack/hosts/master/extensions/gambling/hosts" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "https://hostsfile.mine.nu/hosts0.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "https://hosts-file.net/ad_servers.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "https://hosts-file.net/emd.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
