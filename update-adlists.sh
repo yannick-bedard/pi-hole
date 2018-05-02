@@ -1,19 +1,18 @@
 #!/bin/bash
 
 # Check if root
-if [ "$EUID" -ne 0 ] 
-  then echo "Please run as root or use sudo..."
+if [ "$EUID" -ne 0 ] then
+  echo "Please run as root or use sudo..."
   exit 1
 fi
 
 # See if pi-hole dir exists
-if ! [ -e /etc/pihole/ ]
-  then echo "Directory '/etc/pihole/' does not exist. Please install the latest version of pi-hole first."
+if ! [ -e /etc/pihole/ ] then
+  echo "Directory '/etc/pihole/' does not exist. Please install the latest version of pi-hole first."
   exit 1
 fi
 
 # Update Pi-Hole's block lists
-cp -f /etc/.pihole/adlists.default /etc/pihole/adlists.list
 echo "http://hosts-file.net/ad_servers.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "http://someonewhocares.org/hosts/hosts" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "http://sysctl.org/cameleon/hosts" | sudo tee -a /etc/pihole/adlists.list > /dev/null
