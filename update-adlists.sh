@@ -96,3 +96,4 @@ echo "https://www.dshield.org/feeds/suspiciousdomains_Low.txt" | sudo tee -a /et
 echo "https://www.joewein.net/dl/bl/dom-bl-base.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "https://www.malwaredomainlist.com/hostslist/hosts.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist" | sudo tee -a /etc/pihole/adlists.list > /dev/null
+echo "https://raw.githubusercontent.com/yannick-bedard/pi-hole/master/youtube-ads-blacklist.list" | sudo tee -a /etc/pihole/adlists.list > /dev/null
