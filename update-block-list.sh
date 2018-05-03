@@ -22,7 +22,6 @@ echo "https://hosts-file.net/grm.txt" | sudo tee -a /etc/pihole/adlists.list > /
 echo "https://hosts-file.net/mmt.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "https://hosts-file.net/pha.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "https://hosts-file.net/psh.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
-echo "https://hostsfile.org/Downloads/hosts.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "https://isc.sans.edu/feeds/suspiciousdomains_Low.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "https://isc.sans.edu/feeds/suspiciousdomains_Medium.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "https://mirror.cedia.org.ec/malwaredomains/immortal_domains.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
